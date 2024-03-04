@@ -8,7 +8,25 @@
     width: 80%;
     height: 500px;
     border: 1px solid #333;
-    margin: 0 auto;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    animation: pipe-animation 3s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -90px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
 
